@@ -23,7 +23,7 @@ function Users() {
         const checkbox = document.querySelectorAll('.form-check-input');
         checkbox.forEach((el) => {
             if ( el.value!=='all' )
-            checkedItems[el.value] = el.checked;
+            checkedItems[el.value] = el.checked; 
             
         })
         setCheckedItems({...checkedItems, [event.target.value] : event.target.checked });
